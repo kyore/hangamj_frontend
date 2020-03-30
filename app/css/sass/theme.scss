@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic,cyrillic-ext');
+@import 'colors';
+
+// _variables.scss
+$font-family-sans-serif: 'Roboto', 'Arial', 'Helvetica', sans-serif;
+$font-family-base: $font-family-sans-serif;
+
+// types_scss
+$h2-font-size: 1.5rem;
+
+// Grid customize
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1444px
+) !default;
+
+// Forms
+$input-font-size: 0.875rem;
+$input-font-family: $font-family-base;
+$input-padding-y: 0.5rem;
+$input-padding-x: 0.313rem;
+$input-border-radius: 0.125rem;
+$input-border-color: #72777D;
+$input-font-weight: 400;
+
+$input-focus-border-color: $blue;
+$input-focus-box-shadow: none;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "red": $red,
+);
+
+
+// colors
+$link-color: $blue;
+$navbar-dark-color: $white;
+
+@import "../../../node_modules/bootstrap/scss/bootstrap";
