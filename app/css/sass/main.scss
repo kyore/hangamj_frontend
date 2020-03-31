@@ -45,7 +45,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $light-grey;
   margin: 1em 0;
   padding: 0;
 }
@@ -217,6 +217,7 @@ textarea {
     button {
       width: 100% !important;
     }
+
     .product-price {
       padding-right: 10px;
       text-align: center;
@@ -868,7 +869,14 @@ textarea {
       }
     }
   }
+}
 
+.tech-specs {
+  background-color: #EEEEEE;
+  border: none;
+  width: 100%;
+  padding: 0 0 24px 0;
+  margin-bottom: 10px;
 }
 
 

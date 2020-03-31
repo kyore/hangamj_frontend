@@ -40,7 +40,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #d8d8d8;
   margin: 1em 0;
   padding: 0;
 }
@@ -756,6 +756,14 @@ h3 {
   border-left: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   width: 67%;
+}
+
+.tech-specs {
+  background-color: #EEEEEE;
+  border: none;
+  width: 100%;
+  padding: 0 0 24px 0;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
