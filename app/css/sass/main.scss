@@ -204,7 +204,19 @@ textarea {
     width: 50% !important;
   }
 
+  .product-detail {
+    .detail-header {
+      h1 {
+        line-height: 1.2 !important;
+        font-size: 20px !important;
+      }
+    }
+  }
+
   .detail-price-container {
+    button {
+      width: 100% !important;
+    }
     .product-price {
       padding-right: 10px;
       text-align: center;
@@ -216,6 +228,7 @@ textarea {
     }
   }
 }
+
 
 @media only screen and(min-width: $breakpoints-tablets) {
   .product-buy-box {
@@ -774,6 +787,21 @@ textarea {
 //****************
 // Products Detail
 //****************
+.productOrigin {
+  color: $grey;
+  font-size: 14px;
+  font-weight: 400;
+
+  p {
+    margin-top: 1em;
+  }
+
+  strong {
+    color: $black;
+  }
+}
+
+
 .product-detail, .detail-container, .detail-image {
   margin-bottom: 10px;
   padding: 0;

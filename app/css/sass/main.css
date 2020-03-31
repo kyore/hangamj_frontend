@@ -185,6 +185,14 @@ textarea {
     width: 50% !important;
   }
 
+  .product-detail .detail-header h1 {
+    line-height: 1.2 !important;
+    font-size: 20px !important;
+  }
+
+  .detail-price-container button {
+    width: 100% !important;
+  }
   .detail-price-container .product-price {
     padding-right: 10px;
     text-align: center;
@@ -677,6 +685,18 @@ h3 {
   color: #19792f;
   font-size: 16px;
   font-weight: 700;
+}
+
+.productOrigin {
+  color: #72777d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.productOrigin p {
+  margin-top: 1em;
+}
+.productOrigin strong {
+  color: #000000;
 }
 
 .product-detail, .detail-container, .detail-image {

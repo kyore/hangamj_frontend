@@ -42,4 +42,22 @@ $theme-colors: (
 $link-color: $blue;
 $navbar-dark-color: $white;
 
+
+// Text
+.text-grey {
+  color: $grey !important;
+}
+
+.text-xs {
+  font-size: 12px !important;
+}
+
+.text-sm {
+  font-size: 13px !important;
+}
+
+.text-normal {
+  font-size: 14px !important;
+}
+
 @import "../../../node_modules/bootstrap/scss/bootstrap";
