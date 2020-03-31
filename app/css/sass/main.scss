@@ -9,6 +9,7 @@
    Base styles: opinionated defaults
    ========================================================================== */
 @import "colors";
+@import "widths";
 
 html {
   color: #222;
@@ -585,6 +586,7 @@ textarea {
       border-bottom: 1px solid $light-grey;
       width: 20%;
 
+
       .categories-link {
         text-align: center;
         margin: auto;
@@ -613,6 +615,13 @@ textarea {
         }
       }
     }
+
+  }
+}
+
+@media only screen and(max-width: $breakpoints-tablets) {
+  .categories-card {
+    width: 50% !important;
   }
 }
 

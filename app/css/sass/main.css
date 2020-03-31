@@ -553,4 +553,10 @@ h3 {
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 768px) {
+  .categories-card {
+    width: 50% !important;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
