@@ -877,6 +877,57 @@ textarea {
   width: 100%;
   padding: 0 0 24px 0;
   margin-bottom: 10px;
+
+  h3 {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+    padding: 20px 0 20px 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.tech-column {
+  font-size: 13px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 0;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 20px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+}
+
+.tech-column li {
+  width: 100%;
+  padding: 0;
+  float: none;
+  margin-bottom: 0;
+  border-top: 1px solid $light-grey;
+  display: inline-block;
+  vertical-align: middle;
+
+  .itemName {
+    width: 33.33333333%;
+    padding: 10px;
+    float: left;
+    color: $grey;
+    margin-bottom: 0;
+  }
+
+  .itemValue {
+    width: 58.33333333%;
+    padding: 10px;
+    float: left;
+    font-weight: 500;
+    margin-bottom: 0;
+    color: $black;
+    word-wrap: break-word;
+    line-height: 14px;
+  }
 }
 
 

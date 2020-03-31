@@ -765,5 +765,53 @@ h3 {
   padding: 0 0 24px 0;
   margin-bottom: 10px;
 }
+.tech-specs h3 {
+  width: 100%;
+  float: none;
+  margin-bottom: 0;
+  padding: 20px 0 20px 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tech-column {
+  font-size: 13px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 0;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 20px;
+  -webkit-column-gap: 20px;
+  -moz-column-gap: 20px;
+}
+
+.tech-column li {
+  width: 100%;
+  padding: 0;
+  float: none;
+  margin-bottom: 0;
+  border-top: 1px solid #d8d8d8;
+  display: inline-block;
+  vertical-align: middle;
+}
+.tech-column li .itemName {
+  width: 33.33333333%;
+  padding: 10px;
+  float: left;
+  color: #72777d;
+  margin-bottom: 0;
+}
+.tech-column li .itemValue {
+  width: 58.33333333%;
+  padding: 10px;
+  float: left;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #000000;
+  word-wrap: break-word;
+  line-height: 14px;
+}
 
 /*# sourceMappingURL=main.css.map */
