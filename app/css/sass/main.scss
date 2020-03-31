@@ -199,6 +199,19 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
+@media only screen and(max-width: $breakpoints-tablets) {
+  .categories-card {
+    width: 50% !important;
+  }
+}
+
+@media only screen and(min-width: $breakpoints-tablets) {
+  .product-buy-box {
+    height: 172px;
+  }
+}
+
+
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */
 }
@@ -282,6 +295,11 @@ textarea {
   color: #29333b;
   border: 2px solid;
   background-color: transparent;
+}
+
+.btn-outline-primary {
+  font-weight: 700;
+  border-width: 2px;
 }
 
 .form-control {
@@ -637,14 +655,10 @@ textarea {
     }
 
     .product-card {
-      margin-bottom: 16px;
-
-      .product-card-item {
-        font-size: 14px;
-        padding: 24px;
-        background-color: $white;
-        border: 1px solid $light-grey;
-      }
+      font-size: 14px;
+      padding: 24px;
+      background-color: $white;
+      border: 1px solid $light-grey;
     }
   }
 }
@@ -653,6 +667,73 @@ textarea {
   display: inline-block;
   width: 128px;
   margin-right: 16px;
+}
+
+.quantity-container {
+  float: left;
+  margin-top: auto;
+  width: 56px;
+  height: 40px;
+  flex-shrink: 0;
+  display: inline-block;
+  position: relative;
+
+  button {
+    border-width: 2px;
+  }
+
+  input {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    height: 40px;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(114, 119, 125);
+    border-image: initial;
+    padding: 8px 5px;
+    border-radius: 2px;
+    text-align: center;
+
+    &:focus {
+      border-width: 2px;
+      border-style: solid;
+      border-color: rgb(0, 115, 158);
+      border-image: initial;
+      outline: none;
+    }
+  }
+
+  label {
+    -webkit-transform: translateY(-180%);
+    transform: translateY(-180%);
+    -webkit-box-pack: center;
+    justify-content: center;
+    left: 0;
+    font-weight: 400;
+    font-size: 14px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    padding: 0 16px;
+    width: 100% !important;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    transform-origin: 50% 50%;
+    color: $grey;
+
+    span {
+      background-color: #fff;
+      font-weight: 500;
+      -webkit-transform: scale(.85);
+      transform: scale(.85);
+      line-height: 1;
+      padding: 0 2px !important;
+    }
+  }
 }
 
 .product-info {
@@ -674,19 +755,6 @@ textarea {
     color: #19792f;
     font-size: 16px;
     font-weight: 700;
-  }
-}
-
-
-@media only screen and(max-width: $breakpoints-tablets) {
-  .categories-card {
-    width: 50% !important;
-  }
-}
-
-@media only screen and(min-width: $breakpoints-tablets) {
-  .product-buy-box {
-    height: 172px;
   }
 }
 
