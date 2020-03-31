@@ -118,33 +118,71 @@
 
 <!--Main Content-->
 <div class="container mt-2">
+  <div class="row justify-content-between meta-nav">
+    <div class="col">
+      <ul class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="">Product Categories</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="" class="current">Abrasives</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <div class="row">
-    <div class="col-md-3">
-      <div class="widget-login">
-        <div class="widget-title">
-          <h2>Нэвтрэх</h2>
+    <div class="col-12">
+      <div class="product-detail">
+        <div class="detail-header">
+          <a href="#">ECONOLINE</a>
+          <h1>Gloves, 33" Glove Length, Universal Glove Size, 1 PR</h1>
+          <ul class="list-inline">
+            <li class="list-inline-item">Item # <strong>3JT06</strong></li>
+            <li class="list-inline-item">Mfr. Model # <strong>412007</strong></li>
+            <li class="list-inline-item">Catalog Page # <a href="#">2407</a></li>
+            <li class="list-inline-item">UNSPSC # <strong>23101517</strong></li>
+          </ul>
         </div>
-        <div class="widget-body">
-          <form method="post">
-            <fieldset>
-              <input type="text" class="form-control mb-2" placeholder="User ID">
-              <input type="text" class="form-control mb-2" placeholder="Password">
-            </fieldset>
-            <a href="" class="mr-2">Forgot User ID?</a>
-            <a href="">Forgot Password?</a>
-            <div class="btn-row">
-              <button class="btn btn-primary">Sign In</button>
-              <a href="">Register</a>
+
+        <div class="detail-container row">
+          <div class="col-auto">
+            <div class="detail-image">
+              <img src="https://static.grainger.com/rp/s/is/image/Grainger/3JT06_AS01?$mdmain$" alt="">
             </div>
-          </form>
+          </div>
+          <div class="col">
+            <div class="detail-info">
+              <form action="">
+                <div class="detail-price-container d-flex">
+                  <div class="product-price mb-auto">
+                    <div><span class="price-text">Үнэ</span></div>
+                    <div><span class="price">$35.75</span></div>
+                  </div>
+
+                  <div class="productAction">
+                    <div class="d-flex product-buy">
+                      <div class="quantity-container">
+                        <input type="number" id="quantity" value="1">
+                        <label for="quantity">
+                          <span>Ширхэг</span>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-outline-primary ml-2 w-100">Сагсанд нэмэх</button>
+                    </div>
+                    <div class="wish-list">
+                      <a href="#">+ Add to list</a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="col-md-9">
-      Content will go here
-    </div>
   </div>
+
 </div>
 <!--End main content-->
 
@@ -152,6 +190,7 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="/app/js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="../app/js/plugins.js"></script>
 <script src="../app/js/main.js"></script>
 <script src="../node_modules/feather-icons/dist/feather.min.js"></script>

@@ -184,6 +184,15 @@ textarea {
   .categories-card {
     width: 50% !important;
   }
+
+  .detail-price-container .product-price {
+    padding-right: 10px;
+    text-align: center;
+    width: auto !important;
+  }
+  .detail-price-container .productAction {
+    width: 100% !important;
+  }
 }
 @media only screen and (min-width: 768px) {
   .product-buy-box {
@@ -573,11 +582,12 @@ h3 {
   text-align: center;
   line-height: 1.2;
 }
-.browse-content .products .product-sort {
+
+.products .product-sort {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-.browse-content .products .product-card {
+.products .product-card {
   font-size: 14px;
   padding: 24px;
   background-color: #FFFFFF;
@@ -667,6 +677,65 @@ h3 {
   color: #19792f;
   font-size: 16px;
   font-weight: 700;
+}
+
+.product-detail, .detail-container, .detail-image {
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.product-detail {
+  width: 100%;
+  margin-top: 15px;
+}
+.product-detail .detail-header {
+  width: 100%;
+  padding: 0 0 20px;
+  margin: 0 0 10px 0;
+}
+.product-detail .detail-header a {
+  display: inline-block;
+  vertical-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.product-detail .detail-header h1 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 300;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  text-transform: none;
+}
+.product-detail .detail-header ul {
+  font-size: 12px;
+}
+.product-detail .detail-container {
+  font-weight: 500;
+}
+.product-detail .detail-container .detail-info {
+  padding: 10px 10px 0;
+  margin-bottom: 10px;
+}
+.product-detail .detail-container .detail-info .detail-price-container {
+  font-size: 12px;
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+  padding: 10px 0;
+  margin-bottom: 0;
+  display: block;
+  width: 100%;
+}
+.product-detail .detail-container .detail-info .detail-price-container .product-price {
+  width: 33%;
+}
+.product-detail .detail-container .detail-info .detail-price-container .productAction {
+  padding: 0 10px 5px 20px;
+  border-left: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  width: 67%;
 }
 
 /*# sourceMappingURL=main.css.map */
