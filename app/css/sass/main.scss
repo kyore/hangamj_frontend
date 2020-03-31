@@ -228,6 +228,12 @@ textarea {
       width: 100% !important;
     }
   }
+
+  .tech-column {
+    columns: 1 !important;
+    -webkit-columns: 1 !important;;
+    -moz-columns: 1 !important;;
+  }
 }
 
 
