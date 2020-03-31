@@ -175,47 +175,6 @@ textarea {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-@media only screen and (max-width: 768px) {
-  .categories-card {
-    width: 50% !important;
-  }
-
-  .product-detail .detail-header h1 {
-    line-height: 1.2 !important;
-    font-size: 20px !important;
-  }
-
-  .detail-price-container button {
-    width: 100% !important;
-  }
-  .detail-price-container .product-price {
-    padding-right: 10px;
-    text-align: center;
-    width: auto !important;
-  }
-  .detail-price-container .productAction {
-    width: 100% !important;
-  }
-
-  .tech-column {
-    columns: 1 !important;
-    -webkit-columns: 1 !important;
-    -moz-columns: 1 !important;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .product-buy-box {
-    height: 172px;
-  }
-}
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
@@ -818,6 +777,61 @@ h3 {
   color: #000000;
   word-wrap: break-word;
   line-height: 14px;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 768px) {
+  .categories-card {
+    width: 50% !important;
+  }
+
+  .product-detail .detail-header h1 {
+    line-height: 1.2 !important;
+    font-size: 20px !important;
+  }
+
+  .detail-price-container button {
+    width: 100% !important;
+  }
+  .detail-price-container .product-price {
+    padding-right: 10px;
+    text-align: center;
+    width: auto !important;
+  }
+  .detail-price-container .productAction {
+    width: 100% !important;
+  }
+
+  .tech-specs {
+    background-color: #FFFFFF;
+  }
+  .tech-specs h3 {
+    font-size: 25px !important;
+  }
+
+  .tech-column {
+    columns: 1 !important;
+    -webkit-columns: 1 !important;
+    -moz-columns: 1 !important;
+  }
+  .tech-column li .itemName {
+    width: 40%;
+  }
+  .tech-column li .itemValue {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .product-buy-box {
+    height: 172px;
+  }
+}
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
 }
 
 /*# sourceMappingURL=main.css.map */
