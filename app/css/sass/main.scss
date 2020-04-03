@@ -882,6 +882,65 @@ textarea {
   }
 }
 
+//****************
+// Cart
+//****************
+.cart-step-wizard {
+  display: flex;
+  padding: 40px 0 50px;
+
+  .step {
+    display: flex;
+    align-items: center;
+    -webkit-box-align: center;
+    position: relative;
+
+    &:not(:last-child) {
+      padding-right: 30px;
+      margin-right: 30px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        right: -10px;
+        top: 50%;
+        margin-top: -10px;
+        width: 20px;
+        height: 20px;
+        background-size: 20px;
+        opacity: 0.5;
+        background-image: url('../../fonts/feather/arrow-right.svg');
+        background-position: right center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .icon {
+      margin-right: 10px;
+
+      svg {
+
+        height: 42px;
+        width: 42px;
+      }
+    }
+
+    .title {
+      h5 {
+        margin-bottom: 0;
+        font-weight: 500;
+        font-size: 14px;
+      }
+
+      h6 {
+        margin-bottom: 0;
+        font-weight: 400;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.

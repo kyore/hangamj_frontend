@@ -779,6 +779,52 @@ h3 {
   line-height: 14px;
 }
 
+.cart-step-wizard {
+  display: flex;
+  padding: 40px 0 50px;
+}
+.cart-step-wizard .step {
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  position: relative;
+}
+.cart-step-wizard .step:not(:last-child) {
+  padding-right: 30px;
+  margin-right: 30px;
+}
+.cart-step-wizard .step:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  margin-top: -10px;
+  width: 20px;
+  height: 20px;
+  background-size: 20px;
+  opacity: 0.5;
+  background-image: url("../../fonts/feather/arrow-right.svg");
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.cart-step-wizard .step .icon {
+  margin-right: 10px;
+}
+.cart-step-wizard .step .icon svg {
+  height: 42px;
+  width: 42px;
+}
+.cart-step-wizard .step .title h5 {
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+.cart-step-wizard .step .title h6 {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 12px;
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
