@@ -779,8 +779,62 @@ h3 {
   line-height: 14px;
 }
 
+.cart-summary-area {
+  padding: 15px;
+  font-weight: 400;
+  border: 1px solid #eee;
+}
+.cart-summary-area table {
+  width: 100%;
+  font-weight: 400;
+}
+
+.cart-summary-area.top {
+  font-weight: 500;
+  border: none;
+  padding: 0 0 15px;
+}
+.cart-summary-area.top .btn-primary {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.order-summary-container h2 {
+  background-color: #29333b;
+  color: #fff;
+  font-weight: 500;
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: 1px solid #eee;
+}
+
+.order-product-list h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.order-product-list a {
+  line-height: 8px;
+  font-size: 12px;
+  padding: 2px 3px;
+  font-weight: 700;
+  border-radius: 1px;
+  margin: 2px 0 0;
+}
+
+.cart-table p {
+  font-size: 14px;
+  margin-bottom: 0 !important;
+}
+.cart-table .wish-list a {
+  display: block;
+  font-weight: 700;
+  font-size: 12px;
+}
+
 .cart-step-wizard {
   display: flex;
+  margin-bottom: 10px;
   padding: 40px 0 50px;
 }
 .cart-step-wizard .step {
@@ -810,19 +864,31 @@ h3 {
 .cart-step-wizard .step .icon {
   margin-right: 10px;
 }
-.cart-step-wizard .step .icon img {
-  height: 42px;
-  width: 42px;
+.cart-step-wizard .step .icon svg {
+  height: 36px;
+  width: 36px;
+  fill: #b4b4b4;
 }
 .cart-step-wizard .step .title h5 {
+  color: #b4b4b4;
   margin-bottom: 0;
   font-weight: 500;
   font-size: 14px;
 }
 .cart-step-wizard .step .title h6 {
+  color: #b4b4b4;
   margin-bottom: 0;
   font-weight: 400;
   font-size: 12px;
+}
+.cart-step-wizard .step.active h5 {
+  color: #000000;
+}
+.cart-step-wizard .step.active h6 {
+  color: #000000;
+}
+.cart-step-wizard .step.active svg {
+  fill: #C8102E !important;
 }
 
 /* ==========================================================================
