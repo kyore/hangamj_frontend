@@ -206,7 +206,7 @@
               <tr class="selected-row">
                 <td>
                   <div class="radio">
-                    <input type="radio" id="radio1" name="radio1">
+                    <input type="radio" id="radio1" name="radio">
                     <label for="radio1">
                       <span class="icon" aria-hidden="true"></span>
                       <div>
@@ -233,7 +233,7 @@
               <tr class="">
                 <td>
                   <div class="radio">
-                    <input type="radio" id="radio2" name="radio2">
+                    <input type="radio" id="radio2" name="radio">
                     <label for="radio2">
                       <span class="icon" aria-hidden="true"></span>
                       <div>
@@ -261,7 +261,63 @@
             </table>
           </div>
           <div class="tab-pane fade" id="newAddress" role="tabpanel" aria-labelledby="newaddress-tab">
+            <form method="post" class="mb-5">
+              <h2 class="form-header mt-4">Хүлээн авагчийн мэдээлэл</h2>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCompanyName">Байгууллагын нэр</label>
+                  <input type="email" class="form-control" id="inputCompanyName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputEmail">Имэйл</label>
+                  <input type="email" class="form-control" id="inputEmail">
+                </div>
+              </div>
 
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCustomerName">Захиалагч нэр</label>
+                  <input type="email" class="form-control" id="inputCustomerName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPhone">Холбоо барих утас</label>
+                  <input type="email" class="form-control" id="inputPhone">
+                </div>
+              </div>
+
+              <h2 class="form-header mt-4">Хүлээн авах хаяг</h2>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="selectDuureg">Дүүрэг</label>
+                  <select id="selectDuureg" class="form-control">
+                    <option value="">БГД</option>
+                    <option value="">БЗД</option>
+                    <option value="">СХД</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="selectKhoroo">Хороо</label>
+                  <select id="selectKhoroo" class="form-control">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputDetailAddress">Дэлгэрэнгүй хаяг</label>
+                <textarea name="" id="inputDetailAddress" cols="30" rows="10" class="form-control"></textarea>
+              </div>
+
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label" for="gridCheck">
+                    Энэ хаяг дээр байнга авах
+                  </label>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -269,7 +325,7 @@
 
     <div class="col-md-3">
       <div class="cart-summary-area top">
-        <a href="" class="btn btn-primary">Захиалга хийх</a>
+        <a href="" class="btn btn-outline-secondary p-2">Цааш</a>
       </div>
       <div class="order-summary-container">
         <h2>Order Summary</h2>

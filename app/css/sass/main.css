@@ -90,6 +90,10 @@ textarea {
   resize: vertical;
 }
 
+label {
+  color: #72777d;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -799,7 +803,7 @@ h3 {
   border: none;
   padding: 0 0 15px;
 }
-.cart-summary-area.top .btn-primary {
+.cart-summary-area.top a.btn {
   width: 100%;
   padding: 15px 0;
 }
@@ -1046,6 +1050,14 @@ h3 {
 }
 .checkoutShippingAddress .selected-row {
   background: #EEEEEE;
+}
+
+.form-header {
+  font-size: 24px;
+  display: block;
+  margin: 5px 0 20px;
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 10px;
 }
 
 /* ==========================================================================

@@ -103,6 +103,10 @@ textarea {
   resize: vertical;
 }
 
+label {
+  color: $grey;
+}
+
 /* ==========================================================================
    Browser Upgrade Prompt
    ========================================================================== */
@@ -911,7 +915,7 @@ textarea {
   border: none;
   padding: 0 0 15px;
 
-  .btn-primary {
+  a.btn {
     width: 100%;
     padding: 15px 0;
   }
@@ -1218,6 +1222,13 @@ textarea {
   }
 }
 
+.form-header {
+  font-size: 24px;
+  display: block;
+  margin: 5px 0 20px;
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 10px;
+}
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
