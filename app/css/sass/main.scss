@@ -1274,6 +1274,30 @@ label {
   text-transform: none;
 }
 
+#footer {
+  border-top: 3px solid #D8D8D8;
+  background-color: #EEEEEE;
+  z-index: 0;
+  min-width: 630px;
+  position: relative;
+  margin-top: 50px;
+  padding: 15px 0 0 0;
+
+  h6 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  a {
+    color: #29333B;
+    display: block;
+    padding-bottom: 7px;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: capitalize;
+  }
+}
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
