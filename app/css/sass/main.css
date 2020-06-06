@@ -323,7 +323,7 @@ h3 {
   border-bottom: 1px solid #d8d8d8;
 }
 .widget-login .btn {
-  padding: 10px 30%;
+  padding: 10px 20%;
   margin-right: 10px;
 }
 .widget-login a {
@@ -339,6 +339,14 @@ h3 {
 .widget-login .widget-body {
   line-height: 22px;
   font-size: 14px;
+}
+
+.widget-box {
+  margin-top: 2rem;
+  width: 100%;
+}
+.widget-box img {
+  width: 100%;
 }
 
 .top-bar {
