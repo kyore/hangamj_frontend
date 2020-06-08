@@ -13,229 +13,279 @@
 
   <link rel="stylesheet" href="../app/css/sass/theme.css">
   <link rel="stylesheet" href="../app/css/normalize.css">
+  <link rel="stylesheet" href="../app/plugins/menu/mmenu.css">
+
   <link rel="stylesheet" href="../app/css/sass/main.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
-<body>
-<!--Header section-->
-<header>
-  <div class="top-bar">
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="top-bar-left">
-          <ul>
-            <li><a href="#">Миний бүртгэл</a></li>
-            <li><a href="#">Захиалгын түүх</a></li>
-            <li><a href="#">Захиалгын түүх</a></li>
-          </ul>
-        </div>
-        <div class="top-bar-right">
-          <ul>
-            <li><a href="#" class="text-red">Нэвтрэх</a></li>
-            <li><a href="#">Бүртгүүлэх</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <div class="container">
-      <h3 class="my-auto"><a class="navbar-brand" href="#">HANGAMJ.mn</a></h3>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse w-100 flex-md-column" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto small mb-2 mb-md-0">
-          <li class="nav-item active">
-            <a class="nav-link py-1" href="#">&nbsp;</a>
-          </li>
-        </ul>
+<body id="page">
 
-        <ul class="navbar-nav ml-auto ">
-          <li class="nav-item">
-            <a class="nav-link py-1" href="#">Бидний тухай</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link py-1" href="#">Тусламж</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link py-1" href="#">Холбоо барих</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="nav-search d-none d-md-block d-lg-block d-xl-block">
-    <div class="container">
-      <div class="row justify-content-start">
-        <div class="col-auto">
-          <div class="categories-list">
-            <a href="#">Ангилалууд</a>
+<div class="content">
+  <!--Header section-->
+  <header>
+    <div class="top-bar">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="top-bar-left">
+            <ul>
+              <li><a href="#">Миний бүртгэл</a></li>
+              <li><a href="#">Захиалгын түүх</a></li>
+              <li><a href="#">Захиалгын түүх</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul>
+              <li><a href="#" class="text-red">Нэвтрэх</a></li>
+              <li><a href="#">Бүртгүүлэх</a></li>
+            </ul>
           </div>
         </div>
-        <div class="col-8">
-          <div class="search-container">
-            <form action="">
-              <input type="text" class="form-control"
-                     placeholder="Бүтээгдэхүүний нэр, модел, дугаараар хайх" id="search">
-              <button type="submit" class="btn btn-primary" id="search-button">Хайх</button>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container">
+        <h3 class="my-auto"><a class="navbar-brand" href="#">HANGAMJ.mn</a></h3>
+
+        <a class="navbar-toggler" href="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </a>
+
+        <div class="collapse navbar-collapse w-100 flex-md-column">
+          <ul class="navbar-nav ml-auto small mb-2 mb-md-0">
+            <li class="nav-item active">
+              <a class="nav-link py-1" href="#">&nbsp;</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item">
+              <a class="nav-link py-1" href="#">Бидний тухай</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link py-1" href="#">Тусламж</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link py-1" href="#">Холбоо барих</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="nav-search d-none d-md-block d-lg-block d-xl-block">
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-auto">
+            <ul class="categories-list list-inline">
+              <li class="list-inline-item">
+                <div class="navbar-dark">
+                  <a class="navbar-toggler" href="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                  </a>
+                </div>
+              </li>
+              <li class="list-inline-item"><a href="">Ангилалууд</a></li>
+            </ul>
+          </div>
+          <div class="col-8">
+            <div class="search-container">
+              <form action="">
+                <input type="text" class="form-control"
+                       placeholder="Бүтээгдэхүүний нэр, модел, дугаараар хайх" id="search">
+                <button type="submit" class="btn btn-primary" id="search-button">Хайх</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-auto">
+            <div class="cart-container">
+              <a href="" class="icon-link">
+                <i data-feather="shopping-cart"></i>
+                <span class="mt-1 ml-2">Сагс</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--End header section-->
+
+  <!--Main Content-->
+  <div class="container mt-2">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="heroContainer" style="height: 266px;">
+          <img src="../app/img/hero.jpg" alt="">
+        </div>
+
+        <div class="seller-resource">
+          <div class="row">
+            <div class="col-sm-4 cvp">
+              <img
+                src="../app/img/call-center-agent.svg"
+                alt="">
+
+              <p>Манай мэргэжлийн хамт олон танд шаардлагатай зөвлөгөө, дэмжлэгийг үзүүлнэ</p>
+            </div>
+            <div class="col-sm-4 cvp">
+              <img
+                src="../app/img/warehouse.svg"
+                alt="">
+
+              <p>3000 гаруй нэр төрлийн бараанаас сонголт хийх боломж. Байхгүй барааг ч бид олж нийлүүлнэ</p>
+            </div>
+            <div class="col-sm-4 cvp">
+              <img
+                src="../app/img/responsive-design.svg"
+                alt="">
+
+              <p>Онлайн платформын давуу талыг ашиглаж зайнаас цаг хугацаа, зардалаа хэмнэх боломж</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="featureHeading">hangamj.mn ийн давуу тал</h3>
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/gcom/homepage/W-BTPM232-2019-Q3-Tools-of-the-Trade_Manufacturing_HPI_346x162.jpg"
+                alt="" class="w-100">
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/gcom/homepage/W-BSGP140_2019_SSGP_SBD_Proto_Manu---HomeFeature---335x270px.jpg"
+                alt="" class="w-100">
+            </div>
+            <div class="col-md-4">
+              <img
+                src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/gcom/homepage/19_122569_Grainger_SSGP_Digital_Ad_Campaign_FeatureBanner_Manufacturing_335x270.jpg"
+                alt="" class="w-100">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="widget-login">
+          <div class="widget-title">
+            <h2>Нэвтрэх</h2>
+          </div>
+          <div class="widget-body">
+            <form method="post">
+              <fieldset>
+                <input type="text" class="form-control mb-2" placeholder="User ID">
+                <input type="text" class="form-control mb-2" placeholder="Password">
+              </fieldset>
+
+              <div class="btn-row mt-4">
+                <button class="btn btn-primary">Нэвтрэх</button>
+                <a href="">Нууц үгээ мартсан</a>
+              </div>
+
+              <div class="mt-4 text-center">
+                <a href="">Бүртгүүлэх</a>
+              </div>
             </form>
           </div>
         </div>
-        <div class="col-auto">
-          <div class="cart-container">
-            <a href="" class="icon-link">
-              <i data-feather="shopping-cart"></i>
-              <span class="mt-1 ml-2">Сагс</span>
-            </a>
-          </div>
+
+        <div class="widget-box">
+          <img src="../app/img/widgetbox.jpg" alt="">
         </div>
-      </div>
-    </div>
-  </div>
-</header>
-<!--End header section-->
-
-<!--Main Content-->
-<div class="container mt-2">
-  <div class="row">
-    <div class="col-md-9">
-      <div class="heroContainer" style="height: 266px;">
-        <img src="../app/img/hero.jpg" alt="">
-      </div>
-
-      <div class="seller-resource">
-        <div class="row">
-          <div class="col-sm-4 cvp">
-            <img
-              src="../app/img/call-center-agent.svg"
-              alt="">
-
-            <p>Манай мэргэжлийн хамт олон танд шаардлагатай зөвлөгөө, дэмжлэгийг үзүүлнэ</p>
-          </div>
-          <div class="col-sm-4 cvp">
-            <img
-              src="../app/img/warehouse.svg"
-              alt="">
-
-            <p>3000 гаруй нэр төрлийн бараанаас сонголт хийх боломж. Байхгүй барааг ч бид олж нийлүүлнэ</p>
-          </div>
-          <div class="col-sm-4 cvp">
-            <img
-              src="../app/img/responsive-design.svg"
-              alt="">
-
-            <p>Онлайн платформын давуу талыг ашиглаж зайнаас цаг хугацаа, зардалаа хэмнэх боломж</p>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="featureHeading">hangamj.mn ийн давуу тал</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/gcom/homepage/W-BTPM232-2019-Q3-Tools-of-the-Trade_Manufacturing_HPI_346x162.jpg"
-              alt="">
-          </div>
-          <div class="col-md-4">
-            <img
-              src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/gcom/homepage/W-BSGP140_2019_SSGP_SBD_Proto_Manu---HomeFeature---335x270px.jpg"
-              alt="">
-          </div>
-          <div class="col-md-4">
-            <img
-              src="https://grainger-prod.adobecqms.net/content/dam/grainger/gus/en/public/digital-tactics/gcom/homepage/19_122569_Grainger_SSGP_Digital_Ad_Campaign_FeatureBanner_Manufacturing_335x270.jpg"
-              alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-3">
-      <div class="widget-login">
-        <div class="widget-title">
-          <h2>Нэвтрэх</h2>
-        </div>
-        <div class="widget-body">
-          <form method="post">
-            <fieldset>
-              <input type="text" class="form-control mb-2" placeholder="User ID">
-              <input type="text" class="form-control mb-2" placeholder="Password">
-            </fieldset>
-
-            <div class="btn-row mt-4">
-              <button class="btn btn-primary">Нэвтрэх</button>
-              <a href="">Нууц үгээ мартсан</a>
-            </div>
-
-            <div class="mt-4 text-center">
-              <a href="">Бүртгүүлэх</a>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="widget-box">
-        <img src="../app/img/widgetbox.jpg" alt="">
       </div>
     </div>
   </div>
 </div>
 
-<footer id="footer" class="main-footer">
-  <div class="row mx-5 mb-3">
-    <div class="col-md-3">
-      <p></p>
-      <h6>Мэдээлэл</h6>
-      <p></p>
-      <a href="">Компанийн тухай</a>
-
-
-      <a href="/">Сайтын тухай</a>
-
-
-      <a href="">Нийгмийн хариуцлага</a>
-
-
-      <a href="">Зөвлөгөө</a>
-    </div>
-
-    <div class="col-md-3">
-      <p></p>
-      <h6>Хамтран ажиллах</h6>
-      <p></p>
-
-      <a href="">Нийлүүлэгч болох</a>
-
-
-      <a href="">Худалдан авагч болох</a>
-    </div>
-
-    <div class="col-md-3">
-      <p></p>
-      <h6>Тусламж</h6>
-      <p></p>
-
-
-      <a href="">Үйлчилгээний нөхцөл</a>
-      <a href="">Нууцлал, хамгаалалт</a>
-
-
-      <a href="">Хүргэлт, буцаалт</a>
-    </div>
-
-    <div class="col-md-3">
-      <p></p>
-      <h6>Хаяг</h6>
-      <p>СБД, 11-р хороо, 7-р хороолол Pro One оффис, 1406 тоот Утас: 7713-0033 Мэйл: Info@oos.mn</p>
-    </div>
-  </div>
-</footer>
-
+<nav id="menu">
+  <ul>
+    <li class="Divider">Shop By Category</li>
+    <li><a href="#">Home</a></li>
+    <li>
+      <span>About us</span>
+      <ul>
+        <li><a href="#about/history">History</a></li>
+        <li>
+          <span>The team</span>
+          <ul>
+            <li>
+              <a href="#about/team/management"
+              >Management</a
+              >
+            </li>
+            <li>
+              <a href="#about/team/sales">Sales</a>
+            </li>
+            <li>
+              <a href="#about/team/development"
+              >Development</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li><a href="#about/address">Our address</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="Divider">Other demos</li>
+    <li><a href="advanced.html">Advanced demo</a></li>
+    <li><a href="onepage.html">One page demo</a></li>
+  </ul>
+</nav>
 <!--End main content-->
+
+<!--<footer id="footer" class="main-footer">-->
+<!--  <div class="row mx-5 mb-3">-->
+<!--    <div class="col-md-3">-->
+<!--      <p></p>-->
+<!--      <h6>Мэдээлэл</h6>-->
+<!--      <p></p>-->
+<!--      <a href="">Компанийн тухай</a>-->
+
+
+<!--      <a href="/">Сайтын тухай</a>-->
+
+
+<!--      <a href="">Нийгмийн хариуцлага</a>-->
+
+
+<!--      <a href="">Зөвлөгөө</a>-->
+<!--    </div>-->
+
+<!--    <div class="col-md-3">-->
+<!--      <p></p>-->
+<!--      <h6>Хамтран ажиллах</h6>-->
+<!--      <p></p>-->
+
+<!--      <a href="">Нийлүүлэгч болох</a>-->
+
+
+<!--      <a href="">Худалдан авагч болох</a>-->
+<!--    </div>-->
+
+<!--    <div class="col-md-3">-->
+<!--      <p></p>-->
+<!--      <h6>Тусламж</h6>-->
+<!--      <p></p>-->
+
+
+<!--      <a href="">Үйлчилгээний нөхцөл</a>-->
+<!--      <a href="">Нууцлал, хамгаалалт</a>-->
+
+
+<!--      <a href="">Хүргэлт, буцаалт</a>-->
+<!--    </div>-->
+
+<!--    <div class="col-md-3">-->
+<!--      <p></p>-->
+<!--      <h6>Хаяг</h6>-->
+<!--      <p>СБД, 11-р хороо, 7-р хороолол Pro One оффис, 1406 тоот Утас: 7713-0033 Мэйл: Info@oos.mn</p>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</footer>-->
 
 <script src="../app/js/vendor/modernizr-3.8.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -244,8 +294,25 @@
 <script src="../app/js/plugins.js"></script>
 <script src="../app/js/main.js"></script>
 <script src="../node_modules/feather-icons/dist/feather.min.js"></script>
+
+<script src="../app/plugins/menu/mmenu.polyfills.js"></script>
+<script src="../app/plugins/menu/mmenu.js"></script>
 <script>
     feather.replace();
+
+    document.addEventListener("DOMContentLoaded", () => {
+        new Mmenu("#menu", {
+            "extensions": [
+                "theme-white",
+                "position-front",
+                "pagedim-black",
+                "border-none",
+            ],
+            "navbar": {
+                "title": "Нийт ангилалууд"
+            }
+        })
+    })
 </script>
 </body>
 </html>
